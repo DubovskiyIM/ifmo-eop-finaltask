@@ -82,7 +82,7 @@ class CartItem extends HTMLElement {
 
 		shadow
 			.querySelector('#addToCartButton')
-			.addEventListener('click', () => addToCart(this.title, this.price));
+			.addEventListener('click', () => addToCart(this.title, parseInt(this.price)));
 	}
 }
 
